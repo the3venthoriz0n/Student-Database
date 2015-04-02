@@ -1,0 +1,192 @@
+<!-- student database html file 3/23 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<link href="css/sdbStyleTest2.css" rel="stylesheet" type="text/css">
+
+<title>
+Student Database
+</title>
+
+<!-- below is the little favicon icon in the browser tab -->
+<link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+function toggleDiv(divId) {
+   $("#"+divId).toggle();
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="mainWrapper">
+<div class="content">
+
+
+<h1>
+  Welcome to the database of all students and faculty!
+</h1>
+
+
+<!--
+Left Div
+-->
+
+<div class="signIn">
+  <br>
+  <br>
+    <h2>
+      You can login below:
+    </h2>
+<form action="?p=Login" method="POST">
+        <table class="Default">
+            <thead>
+            <tr><td colspan="2">&nbsp;</td></tr>
+            </thead>
+            <tbody>
+            <tr><td>Username</td><td style="text-align: left;"><input type="text" name="Username" ></td></tr>
+            <tr><td>Password</td><td style="text-align: left;"><input type="Password" name="Password"></td></tr>
+            <tr><td colspan="2"><input type="submit" class="loginButton" name="Login" value="Login"></td></tr>
+            <tr><td colspan="2">Don't have an account yet?</td></tr>
+            <tr><td colspan="2"><input type="submit" class="registerButton" name="Register" value="Register"></td><tr>
+
+            </tbody>
+        </table>
+    </form>
+
+
+<br>
+<br>
+</div>
+
+
+<!-- _______________________Main Table Query Results______________________-->
+
+<div class="tableWrapper">
+  
+  <div class="table">
+    
+    <div class="row header">
+      <div class="cell">
+        Name
+      </div>
+      <div class="cell">
+        Age
+      </div>
+      <div class="cell">
+        ID
+      </div>
+      <div class="cell">
+        ElloMate
+      </div>
+    </div>
+    
+    <div class="row"> <!-- first entry here -->
+      <div class="cell">
+        Luke Skywalker
+      </div>
+      <div class="cell">
+        25
+      </div>
+      <div class="cell">
+        69
+      </div>
+      <div class="cell">
+        Brookline
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Joseph James
+      </div>
+      <div class="cell">
+        27
+      </div>
+      <div class="cell">
+        12398
+      </div>
+      <div class="cell">
+        Somerville
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Kieley
+      </div>
+      <div class="cell">
+        26
+      </div>
+      <div class="cell">
+        123809
+      </div>
+      <div class="cell">
+        Baton Rouge
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell">
+        Harry Potter
+      </div>
+      <div class="cell">
+        25
+      </div>
+      <div class="cell">
+        23408
+      </div>
+      <div class="cell">
+        Hogwarts
+      </div>
+    </div>
+    
+  </div>
+</div> <!-- end 'tableWrapper' -->
+<!-- ______________________________________END TABLE____________________________ -->
+
+
+                                
+<!-- ________________OLD TABLE DESIGN____________________
+
+<div class="tableBox">
+<h1>
+	Queries will go here
+</h1>
+<table class="DefaultR">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<table class="DefaultR" width="50%">
+    <thead><tr><td>ID</td><td>Name</td><td>Address</td><td>DOB</td><td>User Level</td><td>Department</td><td>Major</td><td>GPA</td><td>Email</td><td>Password</td></tr>
+<tr><td class="alt" style="text-align: left">1</td><td style="text-align: right">Charles IV</td><td>305B Roadname Street</td><td>06/22/1874</td><td>Admin</td><td>Music</td><td>Faculty</td><td>N/A</td><td>CharlesIV@server.com</td><td>king0fC@stl3</td></tr>
+<tr><td class="alt" style="text-align: left">2</td><td style="text-align: right">Johnny Appleseed</td></tr>
+<tr><td class="alt" style="text-align: left">3</td><td style="text-align: right">Saint Theresa</td></tr>
+<tr><td class="alt" style="text-align: left">4</td><td style="text-align: right"></td></tr>
+</table>
+
+-->
+
+</div> <!-- end 'content'-->
+</div> <!--end mainWrapper-->
+<div class="footer">
+Rich D'Andrea - Brian Phillips - Andrew Kaplan
+<br>
+Student Databases 2015
+</div>
+</body>
+</html>
